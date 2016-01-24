@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style media="screen">
+      .browsehappy {
+          margin: 0.2em 0;
+          background: #ccc;
+          color: #000;
+          padding: 0.2em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h1>API Basejump: File Metadata Microservice</h1>
+        </div>
+        <div class="twelve columns">
+          <p>This is a very simple test harness which posts to an endpoint in this server</p>
+          <ul>
+            <li>
+              I can submit a FormData object that includes a file upload
+            </li>
+            <li>
+              When I submit something, I will receive the file size in bytes
+              within the JSON response
+            </li>
+          </ul>
+        </div>
+        <div class="twelve columns">
+          <form id="form" enctype="multipart/form-data">
+            <input type="file" name="attachment" />
+            <input type="submit" value="Upload" class="button-primary" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.9.0/axios.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
